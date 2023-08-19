@@ -1,26 +1,30 @@
 
 import './App.css';
+import Navbar from './Navbar';
+import Home from './Home';
+
 
 function App() {
   const title="Welcome Back Agent 47";
   const likes=70;
-  const link="http://www.google.com";
+  //bu çalışmaz aşağıda parametre olarak boolean da aynı zamanda
+  // const person= {name:'hamza', age:20};
+
+  const link="http://195.175.208.98:14533";
 
   return (
+    
     <div className="App">
+      <Navbar />
       <div className="content">
-        <h1>{title} </h1>
-        <p>Liked {likes} times </p>
-
-        <p>{"Hell No"}</p>
-        <p>{10}</p>
-        <p>{Math.random() * 5}</p>
+        <Home/>
         
-        <a href={link}>Google</a>
 
       </div>
     </div>
+
   );
 }
+
 
 export default App;
