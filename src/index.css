@@ -50,12 +50,12 @@
 .blog-preview{
   padding: 10px 16px;
   margin: 20px 0;
-  border-bottom: 1px solid #a70977;
+  border-bottom: 1px solid #fafaff;
 }
 
 .blog-preview:hover{
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
-  background-color:plum;
+  background-color:lightgray;
   border-radius: 20px;
 }
 
