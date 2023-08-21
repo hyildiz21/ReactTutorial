@@ -64,3 +64,10 @@
   color: #a70977;
   margin-bottom: 8px;
 }
+
+.deleteButton{
+  background-color: rgb(209, 42, 42);
+  margin-top: 20px;
+  border-radius: 20px;
+  width: 50%;
+  }

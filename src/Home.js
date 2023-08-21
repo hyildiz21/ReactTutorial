@@ -28,11 +28,17 @@ const Home = () => {
         ] 
     );
 
+    //silmek istediğimiz datanın idsini buraya gönderip bunu da aşağıda prop olarak gönderiyoruz
+    const handleDelete = (id) =>{
+        const newBlog= blogs.filter(x=>x.id!==id);
+        setBlogs(newBlog);
+    }
+
 return (
     <div className="home">
         
-        <BlogList blogs={blogs} title="Bütün Blog Listesi"/>
-        <BlogList blogs={blogs.filter((x)=>x.author=="Hamza")} title="Hamza'nin Blog Listesi"/>
+        <BlogList blogs={blogs} title="Bütün Blog Listesi"  handleDeleteFunction={handleDelete}/>
+        <BlogList blogs={blogs.filter((x)=>x.author=="Hamza")} title="Hamza'nin Blog Listesi" handleDeleteFunction={handleDelete}/>
 
 
 

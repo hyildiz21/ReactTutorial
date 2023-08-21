@@ -1,5 +1,8 @@
 // birden fazla parametre göndererek map içinde kullanma
-const BlogList = ({blogs, title}) => {
+
+//buton içine id gönderiyoruz o da blogsların içindeki item olan blog un idsi.
+
+const BlogList = ({blogs, title, handleDeleteFunction}) => {
     return (
         <div className="bolg-list">
             <h2>{ title }</h2>
@@ -10,6 +13,8 @@ const BlogList = ({blogs, title}) => {
                     <p>
                         {blog.author} Adli Kişi Bunu Yapti.
                     </p>
+                    {/* !--! */}
+                    <button className="deleteButton" onClick={()=>handleDeleteFunction(blog.id)}>Sil</button> 
                 </div>
 
             ))}
