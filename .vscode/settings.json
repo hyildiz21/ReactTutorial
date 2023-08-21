@@ -1,8 +1,8 @@
 {
-    "emmet.preferences": {
-
-    },
+    "emmet.preferences": {},
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
-    }
+    },
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "chrome",
+    
 }

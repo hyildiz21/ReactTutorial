@@ -33,3 +33,34 @@
   margin: 40px auto;
   padding: 20px;
 }
+
+.parag{
+  color:#a70977;
+  padding: 20px;
+  background-color:whitesmoke;
+  border-radius: 20px;
+  margin: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+
+/* blog previews / list */
+
+.blog-preview{
+  padding: 10px 16px;
+  margin: 20px 0;
+  border-bottom: 1px solid #a70977;
+}
+
+.blog-preview:hover{
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.3);
+  background-color:plum;
+  border-radius: 20px;
+}
+
+.blog-preview h2{
+
+  color: #a70977;
+  margin-bottom: 8px;
+}
