@@ -14,8 +14,8 @@ const BlogList = ({ blogs, title}) => {
                         {blog.author} Adli Kişi Bunu Yapti.
                     </p>
                     {/* !--! */}
-
                 </div>
+
 
             ))}
     
