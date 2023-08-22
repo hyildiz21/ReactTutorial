@@ -2,10 +2,10 @@
 
 //buton içine id gönderiyoruz o da blogsların içindeki item olan blog un idsi.
 
-const BlogList = ({blogs, title, handleDeleteFunction}) => {
+const BlogList = ({ blogs, title}) => {
     return (
-        <div className="bolg-list">
-            <h2>{ title }</h2>
+        <div className="blog-list">
+            <h2>{title}</h2>
 
             {blogs.map((blog) => (
                 <div className="blog-preview" key={blog.id}>
@@ -14,11 +14,14 @@ const BlogList = ({blogs, title, handleDeleteFunction}) => {
                         {blog.author} Adli Kişi Bunu Yapti.
                     </p>
                     {/* !--! */}
-                    <button className="deleteButton" onClick={()=>handleDeleteFunction(blog.id)}>Sil</button> 
+
                 </div>
 
             ))}
+    
         </div>
+        
+
 
     );
 }
